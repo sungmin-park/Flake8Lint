@@ -13,7 +13,7 @@ except ImportError:
 from flake8_harobed.mccabe import PathGraphingAstVisitor, WARNING_CODE
 
 
-def pyflakes_check(codeString, filename='(code)'):
+def pyflakes_check(codeString, filename='(code)', reporter=None):
     """
     This is a monkey-patch for flake8.pyflakes.check.
 
